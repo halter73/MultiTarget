@@ -1,5 +1,6 @@
 ﻿using System;
 using ClassLibraryMultiTarget;
+using ClassLibraryTransitiveSingleTarget;
 
 namespace ConsoleAppCore31
 {
@@ -8,7 +9,7 @@ namespace ConsoleAppCore31
         static void Main(string[] args)
         {
             // Prints: "netcoreapp3.1"
-            Console.WriteLine(Class1.TargetFramework);
+            Console.WriteLine($"{Class1.TargetFramework}, {Class1.MyProperty}, {Class2.MyProperty}");
         }
     }
 }
